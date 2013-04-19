@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.melissamantzkedesign.TeamHoyt"
         version   = "2.0.0">
-    <name>Team Hoyt</name>
+    <name>TeamHoyt</name>
 
     <description>
         Responsive Application for Team Hoyt Running Team.
