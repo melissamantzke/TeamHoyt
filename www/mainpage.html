@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width" / >
+        <title>Team Hoyt</title>
+        
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        
+        <script src="js/jquery-1.8.2.min.js" type="text/javascript" ></script>
+        <script src="js/jquery.easing.1.3.js" type="text/javascript" ></script>
+        <!--<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
+        <script src="js/jquery.mobile.custom.min.js" type="text/javascript"></script>
+        <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"  type="text/javascript"></script>-->
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAjNx_WkKcAy02vU9WMKSY-oj2a9C__LLc&sensor=false"></script>
+        
+
+
+</head>
+
+<body>
+<div id="leftbar">
+	<div id="hoytlogo"></div>
+    <div id="line"></div>
+    <div id="menu"></div>
+    <div id="line"></div>
+    <div id="Anav"></div>
+    <div id="line"></div>
+    <div id="Bnav"></div>
+    <div id="line"></div>
+    <div id="Cnav"></div>
+    <div id="line"></div>
+    <div id="Dnav"></div>
+    <div id="line"></div>
+    <div id="Enav"></div>
+    <div id="line"></div>
+</div>
+
+<div id="menuslider">
+	<div id="menucontent">
+	<h1>Madison Area Races :</h1>
+	<div id="menuline1"></div>
+    <h2>Lake Monona Run/Walk</h2>
+    <p>20KM Run and 5Km Run/Walk</p>
+    <div id="menuline2"></div>
+    <h3>Glow Run</h3>
+    <p>5k fun run</p>
+    <div id="menuline3"></div>
+    <h4>Fleet Feet Aquathon Series</h4>
+    <p>1000 meter swim / 5000 meter run</p>
+    <div id="menuline4"></div>
+    <h5>United Way/Oscar Mayer Weenie Run</h5>
+    <p>5k run/5k walk</p>
+    <div id="menuline5"></div>
+    <h6>Twilight 10k</h6>
+    <p>10k run</p>
+    <div id="menuline6"></div>
+    </div>
+</div>
+
+<div id="bottombar"></div>
+
+<div id="googleMap" style="width:100%;height:1000px;margin-left:auto;margin-right:auto"></div>
+
+<!--orientation for tablet-->
+
+
+
+
+
+
+<!--hide nav-->
+<script>
+var trayOpen=false; 
+
+$(document).ready(function() {
+	$("#menuslider").animate({width: '0px'}, 0);
+	$("#menucontent").fadeOut(0);
+	 
+ });
+ 
+ $('#menu').on( 'tap', function(){
+	 console.log("hit");
+	 togglesidebar();
+ });
+ 
+ $('#Anav, #Bnav, #Cnav, #Dnav, #Enav').on( 'tap', function(){
+	 console.log("hit");
+	 togglesidebar();
+	 
+ });
+ 
+ 
+ 
+ function togglesidebar(){
+	 
+	 if (trayOpen==false){
+	//show menuslider
+	$("#menuslider").animate({width: '350px'}, 500);
+	
+	//(slight delay) fade content in
+	$("#menucontent").delay(500).fadeIn(600);
+	//traystate open
+	trayOpen=true;
+		 	
+	 }else {
+		 
+		 //fade content out
+		 $("#menucontent").fadeOut(500);
+		 //(slight delay)hide menuslider
+		 $("#menuslider").delay(500).animate({width: '0px'}, 500);
+		 
+		 
+		 //traystate closed 
+		 trayOpen=false;
+		 
+	 }
+	 
+
+	
+	};
+
+
+</script>
+
+
+
+
+
+<!--Google Maps api-->
+ <script>
+		
+			
+			var myCenter=new google.maps.LatLng(43.077627, -89.383215);
+			var lakeMonona=new google.maps.LatLng(43.063249,-89.340998);
+			var glowRun=new google.maps.LatLng(43.045967, -89.379213);
+			var fleetFeet=new google.maps.LatLng(43.131639, -89.369692);
+			var oscarMeyer=new google.maps.LatLng(43.126961,-89.363577);
+			var twilight=new google.maps.LatLng(43.074782,-89.382175);
+		
+			function initialize()
+				{
+					
+					
+						
+					var mapProp = {
+						
+						center: myCenter,
+						zoom:12,
+						
+						mapTypeId:google.maps.MapTypeId.ROADMAP,
+					  
+						panControl:false,
+						zoomControl:false,
+						mapTypeControl:false,
+						scaleControl:false,
+						streetViewControl:false,
+						overviewMapControl:false,
+						rotateControl:false,
+					  
+					  };
+					  
+					var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+					
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+					//sets oscarMeyer icon
+						
+					var markeroscarMeyer=new google.maps.Marker({
+						
+						position:oscarMeyer,
+						icon:'images/Dmap.png',
+						animation:google.maps.Animation.DROP,
+					
+					});
+					
+						markeroscarMeyer.setMap(map);
+					
+					//sets lakeMonona icon	
+						
+					var markerlakeMonona=new google.maps.Marker({
+						
+						position:lakeMonona,
+						icon:'images/Amap.png',
+						animation:google.maps.Animation.DROP,
+					
+					});
+					
+						markerlakeMonona.setMap(map);
+						
+						
+					//sets glowRun icon	
+						
+					var markerglowRun=new google.maps.Marker({
+						
+						position:glowRun,
+						icon:'images/Bmap.png',
+						animation:google.maps.Animation.DROP,
+					
+					});
+					
+						markerglowRun.setMap(map);
+						
+					//sets fleetFeet icon	
+						
+					var markerfleetFeet=new google.maps.Marker({
+						
+						position:fleetFeet,
+						icon:'images/Cmap.png',
+						animation:google.maps.Animation.DROP,
+					
+					});
+					
+						markerfleetFeet.setMap(map);
+						
+				//sets twilight icon	
+						
+					var markertwilight=new google.maps.Marker({
+						
+						position:twilight,
+						icon:'images/Emap.png',
+						animation:google.maps.Animation.DROP,
+					
+					});
+					
+						markertwilight.setMap(map);
+						
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+					//sets info windows
+
+					//oscarmeyer
+					var infowindowoscarMeyer = new google.maps.InfoWindow({
+						
+						content:"<h7>United Way/Oscar Mayer 5k</h7> <br><h8>2920 N Sherman Ave, Madison, WI 53704<br> Saturday, May 4, 2013</h8>"
+					});
+					
+					
+					google.maps.event.addListener(markeroscarMeyer,'click',function() {
+						
+						infowindowoscarMeyer.open(map,markeroscarMeyer);
+						
+					});
+					
+				
+				//LakeMonona
+				var infowindowlakeMonona = new google.maps.InfoWindow({
+						
+						content:"<h7>Lake Monona 20KM Run and 5KM Run/Walk</h7> <br><h8> Winnequah Park, 1041 Nichols Rd, Monona, WI  						                        53716 <br> Saturday, May 4, 2013</h8>"
+					});
+					
+					
+					google.maps.event.addListener(markerlakeMonona,'click',function() {
+						
+						infowindowlakeMonona.open(map,markerlakeMonona);
+						
+					});
+					
+				
+				
+				
+				//Glow Run
+				var infowindowglowRun = new google.maps.InfoWindow({
+						
+						content:"<h7>Glow Run</h7>  <br><h8> Alliant Energy Center/Willow Park, <br> 1919 Alliant Energy Center Way,                        	                        Madison, WI 53713<br>Saturday, May 11, 2013</h8>"
+					});
+					
+					
+					google.maps.event.addListener(markerglowRun,'click',function() {
+						
+						infowindowglowRun.open(map,markerglowRun);
+						
+					});
+					
+				
+				
+				//Fleet Feet
+				var infowindowfleetFeet = new google.maps.InfoWindow({
+						
+						content:"<h7>Fleet Feet Aquathon Series</h7> <br><h8>Warner Park Beach, 1625 Northport Drive, Madison, WI 			                        53704 <br>Start Date: Thursday, May 23, 2013</h8>"
+					});
+					
+					
+					google.maps.event.addListener(markerfleetFeet,'click',function() {
+						
+						infowindowfleetFeet.open(map,markerfleetFeet);
+						
+					});
+					
+				
+				//twilight
+				var infowindowtwilight = new google.maps.InfoWindow({
+						
+						content:"<h7>Twilight 10k</h7><br><h8>S. Pinckney St, Madison, WI 53704<br>Saturday, May 25, 2013 & Sunday, May 26, 2013</h8>"
+					});
+					
+					
+					google.maps.event.addListener(markertwilight,'click',function() {
+						
+						infowindowtwilight.open(map,markertwilight);
+						
+					});
+					
+					
+					
+				
+				
+				
+				
+				
+				
+				var stylesArray =[
+				
+				{
+					"featureType": "landscape.man_made",
+					"elementType": "geometry.fill",
+					"stylers": [
+					  { "visibility": "on" },
+					  { "hue": "#11223b" },
+					  { "saturation": "-100" },
+					]
+				  },{
+					"featureType": "poi",
+					"stylers": [
+					  { "visibility": "off" }
+					]
+				  },{
+					"featureType": "road",
+					"elementType": "geometry.fill",
+					"stylers": [
+					  { "hue": "#11223b" }
+					]
+				  },{
+					"featureType": "road",
+					"elementType": "labels.text.stroke",
+					"stylers": [
+					  { "visibility": "off" },
+					  { "hue": "#11223b" }
+					]
+				  },{
+					"featureType": "water",
+					"stylers": [
+					  { "hue": "#11223b" },
+					  { "saturation": "50" },
+					]
+				  },{
+				}
+			]
+			
+			map.setOptions({styles: stylesArray});
+								
+								
+				
+				}
+				
+				
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+			
+			google.maps.event.addDomListener(window, 'load', initialize);
+			
+		</script>
+    
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
