@@ -81,6 +81,47 @@
 	margin-top:30px;
 	margin-left:30px;
 }
+#infobuttonA{
+	
+	height:23px;
+	width:23px;
+	float:right;
+	margin-right:40px;
+	margin-top:-40px;
+	
+}
+#infobuttonB{
+	
+	height:30px;
+	width:30px;
+	float:right;
+	margin-right:35px;
+	margin-top:-50px;
+}
+#infobuttonC{
+	
+	height:30px;
+	width:30px;
+	float:right;
+	margin-right:35px;
+	margin-top:-50px;
+}
+#infobuttonD{
+	
+	height:30px;
+	width:30px;
+	float:right;
+	margin-right:35px;
+	margin-top:-40px
+}
+#infobuttonE{
+	
+	height:30px;
+	width:30px;
+	float:right;
+	margin-right:35px;
+	margin-top:-30px
+}
 #Anav{
 	background-image:url(../images/Anav.png);
 	height:45px;
@@ -130,49 +171,49 @@
 }
 #menuline1{
 	background-image:url(../images/menuline.png);
-	width:200px;
+	width:300px;
 	height:2px;
-	margin-left:50px;
+	margin-left:30px;
 	float:left;
 	margin-top:20px;
 }
 #menuline2{
 	background-image:url(../images/menuline.png);
-	width:200px;
+	width:300px;
 	height:2px;
-	margin-left:50px;
+	margin-left:30px;
 	float:left;
 	margin-top:30px;
 }
 #menuline3{
 	background-image:url(../images/menuline.png);
-	width:200px;
+	width:300px;
 	height:2px;
-	margin-left:50px;
+	margin-left:30px;
 	float:left;
 	margin-top:20px;
 }
 #menuline4{
 	background-image:url(../images/menuline.png);
-	width:200px;
+	width:300px;
 	height:2px;
-	margin-left:50px;
+	margin-left:30px;
 	float:left;
 	margin-top:20px;
 }
 #menuline5{
 	background-image:url(../images/menuline.png);
-	width:200px;
+	width:300px;
 	height:2px;
-	margin-left:50px;
+	margin-left:30px;
 	float:left;
 	margin-top:25px;
 }
 #menuline6{
 	background-image:url(../images/menuline.png);
-	width:200px;
+	width:300px;
 	height:2px;
-	margin-left:50px;
+	margin-left:30px;
 	float:left;
 	margin-top:30px;
 }
