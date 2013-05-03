@@ -1,4 +1,11 @@
-/* FONTS */
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 767px){
+	
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 768px) and (max-width: 977px){
 @font-face {
     font-family: 'BebasNeueRegular';
     src: url(../fonts/BebasNeue-webfont.eot);
@@ -8,533 +15,289 @@
          url(../fonts/BebasNeue-webfont.svg#BebasNeueRegular) format('svg');
     font-weight: normal;
     font-style: normal;
-
-}
-@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
-
-a{
-	text-decoration:none;
-}
-
-
-
+}	
 	
 
 
+/*///////////////Splash page styles//////////////////////////*/
 
-
-#header{
-	background-color:#FFF;
-	height:120px;
-	width:100%;
-	box-shadow: 1px 1px 1px #CCC;
-	position:fixed;
-	z-index:9999;
-	opacity:0.97;
+#splash{
+	background-image:url(../images/cartographer.png);
+}
+#BigLogo{
+	background-image:url(../images/bigLogo.png);
+	width:292px;
+	height:332px;
+	margin-top:100px;
+	margin-left:300px;
 }
 
-
-
-#selflogo{
-	height:36px;
-	width:40px;
-	margin-top:40px;
-	margin-left:40px;
-	float:left;
-	
-}
-
-
-
-#nav{
-	float:right;
-	margin-right:20px;
-	margin-top:60px;
-}
-
-
-
-#nav li{
-	float:left;
-	margin-left:20px;
-	font-size:18px;
-	color:#838080;
+.splashp{
+	font-size:20px;
 	font-family:'BebasNeueRegular';
+	margin-left:260px;
+	margin-top:40px;
 }
-
-
-
-#nav a{
-	text-decoration:none;
-	color:#838080;
-}
-
-
-
-
-
-   
-    
-   
-    
-#FMA{
-	/*position:relative;*/
-	width:100%;
-	position:fixed;
-	z-index:-1;
-}
-
-
-
-
-
-
-
-
-
-video{
-	position:absolute;
-	top:0px;
-	left:0px;
-	z-index:-1;
-}
-
-
-
-
-#greetingcircle{
-	background-image:url(../images/greetcircle8.png);
-	width:39%;
-	height:456px;
-	margin-top:200px;
-	margin-bottom: 35px;
+#button{
 	
-	margin-left:auto;
-	margin-right:auto;
-	background-repeat:no-repeat;
+	height:45px;
+	width:120px;
+	float:right;
+	margin-top:40px;
+	margin-right:250px;
 }
 
 
+/*////////////////main page styles///////////////////////////*/
 
-
-
-#gallery{
-	width:100%;
+#leftbar{
+	background-image:url(../images/leftbar.png);
+	height:1002px;
+	width:92px;
 	float:left;
-	background-image:url(../images/fabric_plaid.png);
-	height:1030px;
-	box-shadow: 1px 1px 1px #666;
-	
 	
 }
-
-
-
-
-
-
-
-
-
-/*GALLERY IDS*/
-
-
-
-
-.dirtybirdthumb{
-	background-image:url(../images/gallery/dirtybirdthumb.jpg);
-	width:306px;
-	height:306px;
-	
-	
-	
-}
-
-
-.questlinethumb{
-	background-image:url(../images/gallery/questlinethumb.jpg);
-	width:306px;
-	height:306px;
-}
-
-
-
-.nektarthumb{
-	background-image:url(../images/gallery/nektarthumb.jpg);
-	width:306px;
-	height:306px;
-}
-
-
-
-.selfpromothumb{
-	background-image:url(../images/gallery/selfpromothumb.jpg);
-	width:306px;
-	height:306px;
-}
-
-
-
-.birdpaintthumb{
-	background-image:url(../images/gallery/birdpainthumb.jpg);
-	width:306px;
-	height:306px;
-	
-	
-}
-
-
-
-.mileuthumb{
-	background-image:url(../images/gallery/mileuthumb.jpg);
-	width:306px;
-	height:306px;
-}
-
-
-
-.smartshopthumb{
-	background-image:url(../images/gallery/smartshoppingthumb.jpg);
-	width:306px;
-	height:306px;
-}
-
-
-
-
-.heathersitethumb{
-	background-image:url(../images/gallery/heathersitethumb.jpg);
-	width:306px;
-	height:306px;
-}
-
-
-
-.playworksthumb{
-	background-image:url(../images/gallery/playworksthumb.jpg);
-	width:306px;
-	height:306px;
-}
-
-
-
-.pinkbackground{
-	height:306px;
-	width:306px;
-	-webkit-opacity: 0.5;
-	-moz-opacity: 0.5;
-	opacity: 0.5;
-	background-color:#ffa47c;
-}
-
-
-
-#thumbnails li{
-	
+#hoytlogo{
+	background-image:url(../images/hoytlogo.png);
+	height:75px;
+	width:66px;
 	float:left;
-	margin-right:20px;
 	margin-top:20px;
-	border:2px solid #809190;
+	margin-left:10px;
+	}
+#line{
+	background-image:url(../images/line.png);
+	height:2px;
+	width:78px;
+	float:left;
+	margin-top:30px;
+	margin-left:5px;
+}
+#menu{
+	background-image:url(../images/menubutton.png);
+	height:13px;
+	width:25px;
+	float:left;
+	margin-top:30px;
+	margin-left:30px;
+}
+#infobuttonA{
+	
+	height:23px;
+	width:23px;
+	float:right;
+	margin-right:40px;
+	margin-top:-30px;
 	
 }
-
-#thumbnails{
-	width:978px;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-
-
-
-#thumbnails a{
-	display: block;
-	height:306px;
-	width:306px;
-	overflow:hidden;
-	position:relative;
-
-}
-
+#infobuttonB{
 	
-
-.clickhere{
-	width:208px;
-	height:208px;
-	background-image:url(../images/gallery/takealook.png);
-	margin-left:45px;
+	height:30px;
+	width:30px;
+	float:right;
+	margin-right:35px;
+	margin-top:-30px;
+	
+}
+#infobuttonC{
+	
+	height:30px;
+	width:30px;
+	float:right;
+	margin-right:35px;
+	margin-top:-30px;
+	
+}
+#infobuttonD{
+	
+	height:30px;
+	width:30px;
+	float:right;
+	margin-right:35px;
+	margin-top:-30px;
+	
+}
+#infobuttonE{
+	
+	height:30px;
+	width:30px;
+	float:right;
+	margin-right:35px;
+	margin-top:-30px;
+	
+}
+#Anav{
+	background-image:url(../images/Anav.png);
+	height:45px;
+	width:38px;
+	float:left;
+	margin-top:30px;
+	margin-left:25px;
+}
+#Bnav{
+	background-image:url(../images/Bnav.png);
+	height:45px;
+	width:38px;
+	float:left;
+	margin-top:30px;
+	margin-left:25px;
+}
+#Cnav{
+	background-image:url(../images/Cnav.png);
+	height:37px;
+	width:37px;
+	float:left;
+	margin-top:30px;
+	margin-left:25px;
+}
+#Dnav{
+	background-image:url(../images/Dnav.png);
+	height:37px;
+	width:37px;
+	float:left;
+	margin-top:30px;
+	margin-left:25px;
+}
+#Enav{
+	background-image:url(../images/Enav.png);
+	height:37px;
+	width:37px;
+	float:left;
+	margin-top:30px;
+	margin-left:25px;
+}
+#menuslider{
+	background-color:rgba(18, 18, 17, .8);
+	height:1002px;
+	width:350px;
+	float:left;
+	margin-left:-1px;
+}
+#menuline1{
+	background-image:url(../images/menuline.png);
+	width:300px;
+	height:2px;
+	margin-left:30px;
+	float:left;
 	margin-top:20px;
-	position: absolute;
-	background-size:contain;
-	background-repeat:no-repeat;
-	cursor: default;
 }
-
-
-
-.clickhere p{
-		font-family:'BebasNeueRegular';
-		font-size:30px;
-		color:#474747;
-		text-decoration:none;
-		text-align:center;
-		margin-left:45px;
-		margin-right:0px;
-		margin-top:90px;
-		
-		text-shadow:  
-			0 0 1px #fff, 
-			0 1px 2px rgba(0,0,0,0.3);
-	
+#menuline2{
+	background-image:url(../images/menuline.png);
+	width:300px;
+	height:2px;
+	margin-left:30px;
+	float:left;
+	margin-top:30px;
 }
-
-
-
-.clickhere p:hover{
+#menuline3{
+	background-image:url(../images/menuline.png);
+	width:300px;
+	height:2px;
+	margin-left:30px;
+	float:left;
+	margin-top:20px;
+}
+#menuline4{
+	background-image:url(../images/menuline.png);
+	width:300px;
+	height:2px;
+	margin-left:30px;
+	float:left;
+	margin-top:20px;
+}
+#menuline5{
+	background-image:url(../images/menuline.png);
+	width:300px;
+	height:2px;
+	margin-left:30px;
+	float:left;
+	margin-top:25px;
+}
+#menuline6{
+	background-image:url(../images/menuline.png);
+	width:300px;
+	height:2px;
+	margin-left:30px;
+	float:left;
+	margin-top:30px;
+}
+h1{
 	font-family:'BebasNeueRegular';
 	font-size:30px;
-	color:#8accba;
+	margin-top:150px;
+	margin-left:35px;
+	color:#fff9d0;
 }
-
-
-#thumbnails .rowEnd{
-	margin-right:0px;
-}
-
-
-
-
-#photoholder{
-
-	
-}
-
-
-#mephoto{
-	background-image:url(../images/mephoto.jpg);
-	width:100%;
-	height:500px;
-   	background-repeat:no-repeat;
-	overflow:hidden;
-	background-attachment:fixed;
-	background-position:bottom;
-	background-size:100%;
-	
-	
-}
-
-
-
-/*FOOTER STYLES DESKTOP*/
-
-
-
-#footer{
-	background-image:url(../images/footer/footer.png);
-	height:572px;
-	width:100%;
-	margin-bottom:0px;
-	padding-top:30px;
-	margin-top:-15px;
-	
-	/*position:absolute;*/
-	
-	
-	
-	
-}
-
-
-
-#backtotop{
-	
-	width:72px ;
-	position:relative;
-	float:right;
-	margin-right:20px;
-
-	
-}
-
-
-
-#socialicons{
-	margin-top:10px;
-	width:450px;
-	background-position:center;
-	margin-left:440px;
-}
-
-
-
-#socialicons li{
-	float:left;
-	margin-left:15px;
-	height:59px;
-	width:58px;
-	
-}
-
-
-
-#socialicons .rowEnd{
-	margin-right:0px;
-}
-
-
-
-#bottomline{
-	background-image:url(../images/footer/bottomline.png);
-	height:1px;
-	margin-top:100px;
-	background-position:center center;
-	background-repeat:no-repeat;
-}
-
-
-
-#aboutContainer{
-	margin-left:auto;
-	margin-right:auto;
-}
-
-
-
-.footerHeading1{
-	font-size:26px;
-	color:#7b7673;
+h2, h3, h4, h5, h6{
 	font-family:'BebasNeueRegular';
-	text-align:center;
-	background-image:url(../images/aboutmeline.png);
-	background-position:center center;
-	background-repeat:no-repeat;
-	margin-top:70px;
-	
-	text-shadow:  
-			0 0 1px #333, 
-			0 1px 1px rgba(0,0,0,0.3);
+	color:#fff9d0;
+	margin-left:40px;
+	font-size:20px;
 }
-
-
-
-.footerHeading2{
-	font-size:26px;
-	color:#7b7673;
-	font-family:'BebasNeueRegular';
-	text-align:center;
-	background-image:url(../images/aboutmeline.png);
-	background-position:center center;
-	background-repeat:no-repeat;
-	margin-top:70px;
+h2{
+	margin-top:55px;
 }
-
-
-
-#paragraph{
-	margin-left:auto;
-	margin-right:auto;
-	width:500px;
-}
-
-
-
-p{
-	font-size:14px;
-	font-family:'PT Sans Narrow';
-	color:#999898;
-	margin-left:auto;
-	margin-right:auto;
-	float:left;	
-	margin-top:40px;
-}
-
-
-
 h3{
-	font-size:20.42px;
-	color:#7b7673;
+	margin-top:70px;
+}
+h4{
+	margin-top:55px;
+}
+h5{
+	margin-top:50px;
+}
+h6{
+	margin-top:50px;
+}
+h7{
+	font-size:18px;
 	font-family:'BebasNeueRegular';
-	text-align:center;
-	margin-left:2%;
-	margin-right:2%;
-	margin-top:20px;
+	color:#474646;
 	
-	text-shadow:  
-			0 0 1px #333, 
-			0 1px 1px rgba(0,0,0,0.3);
 }
-
-
-
-
-.phonenumber{
-	float:right;
-	font-size:14px;
-	font-family:'PT Sans Narrow';
-	margin-left:10px;
-	margin-top:0px;
-	text-decoration:none;
-}
-
-
-
-.emailaddress{
-	float:right;
-	font-size:14px;
-	font-family:'PT Sans Narrow';
-	margin-left:10px;
-	margin-top:0px;
-	text-decoration:none;
-}
-
-
-
-
-
-#contact{
+h8{
+	font-size:11px;
 	
-	margin-left:500px;
-	
-	max-width:324px;
-	width:500px;
+	color:#474646;
 }
-
-
-
-#contacticons li{
-	float:left;
-	margin-right:20px;
+p{
+	color:#fff9d0;
 	margin-top:10px;
-	display:inline-block;
-	text-decoration:none;
-	
+	margin-left:40px;
+	font-size:14px;
 }
 
-
-
-
-#copyright{
-	background-image:url(../images/copyright.png);
-	width:180px;
-	height:12px;
-	margin-left:90px;
+#googleMap{
 	position:absolute;
-	margin-top:15px;
-	background-repeat:no-repeat;
-	
-	
-	
+	z-index:-1;
+}
+#bottombar{
+	background-image:url(../images/bottombar.jpg);
+	width:100%;
+	height:35px;
+	margin-bottom:0px;
+	float:left;
 }
 
 
 
 
 
-	
 .clear{
 	clear:both;
 }
+}
 
-.pinkbackground{display:block;}
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 978px){
 	
 	
+/*HEADER STYLES*/
+
+	
+	
+	
+	
+	
+}
